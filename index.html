@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Arun's Portfolio</title>
     <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/newcss.css" />
     <link
@@ -185,7 +185,7 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="assets\MyCV.pdf" class="button button--flex">
+              <a download="" href="assets/MyCV.pdf" class="button button--flex">
                 Download Resume<i class="fas fa-download button__icon"></i>
               </a>
             </div>
@@ -623,13 +623,6 @@ Engineering College
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <!-- <a
-                  href="https://darksurfer.streamlit.app/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a> -->
               </div>
             </div>
             <!-- ------------------------portfollio 2-------------------- -->
@@ -655,13 +648,6 @@ Engineering College
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <!-- <a
-                  href="https://venkateeshh.github.io/Weather-App/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a> -->
               </div>
             </div>
 
@@ -681,75 +667,8 @@ Engineering College
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <!-- <a
-                  href="https://github.com/itsme-arun/Text-to-Image-Gen-AI"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a> -->
               </div>
             </div>
-            <!-- ------------------------portfollio 4-------------------- -->
-            <!-- <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio3.png" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Language Translator</h3>
-                <p class="portfolio__description">
-                  This language translator web app is a user-friendly tool built
-                  with HTML, CSS, and JavaScript. It leverages Google Translate
-                  API to seamlessly translate text between multiple languages.
-                  The app features a simple interface, ensuring smooth
-                  performance across devices..
-                </p>
-                <a
-                  href="https://github.com/Venkateeshh/Js-Language-Translator"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="https://venkateeshh.github.io/Js-Language-Translator/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-              </div>
-            </div> -->
-
-            <!-- ------------------------portfollio 5-------------------- -->
-            <!-- <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio4.png" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Sorting Visualizer</h3>
-                <p class="portfolio__description">
-                  Sorting Visualizer is a Java-based project that allows users
-                  to visualize various sorting algorithms in action using a
-                  Graphical User Interface (GUI). It provides an interactive and
-                  educational way to understand how different sorting algorithms
-                  work by visually demonstrating their step-by-step sorting
-                  process.
-                </p>
-                <a
-                  href="https://github.com/Venkateeshh/Sorting-Visualizer"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/posts/venkatesh-kamath-_algorithmdesign-sortingvisualizer-javaprojects-activity-7095437035125043200-fWDl?utm_source=share&utm_medium=member_desktop"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-              </div>
-            </div> -->
           </div>
 
           <!-- add arrows -->
@@ -835,21 +754,16 @@ Engineering College
   document.getElementById('send-button').addEventListener('click', function(event) {
     event.preventDefault();
 
-    // Get the values from the form
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-
-    // Ensure all fields are filled
     if (name && email && message) {
-      // Create the mailto link with the form data
       const subject = encodeURIComponent(`Message from ${name}`);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
-      // Construct the mailto URL
       const mailtoLink = `mailto:arun27012005@gmail.com?subject=${subject}&body=${body}`;
 
-      // Open the default email client with the pre-filled details
       window.location.href = mailtoLink;
     } else {
       alert("Please fill all the fields before sending.");
@@ -861,45 +775,6 @@ Engineering College
       </section>
     </main>
 
-
-    <!--================== Footer ===============-->
-    <!-- <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Arun R</h1>
-            <span class="footer__subtitle"
-              >Information Technology Student</span
-            >
-          </div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#qualification" class="footer__link">Qualification</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Projects</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">ContactMe</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.instagram.com/_a.r.u.n.27_/"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-
-          </div>
-        </div>
-
-        <p class="footer__copy">&#169; Arun R. All right reserved</p>
-      </div>
-    </footer> -->
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -937,7 +812,6 @@ Engineering College
       text-decoration: none;
     }
 
-    /* Instagram gradient using background-clip */
     .footer__social.instagram i {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
       -webkit-background-clip: text;
@@ -945,7 +819,7 @@ Engineering College
     }
 
     .footer__social.linkedin {
-      color: #0077b5; /* LinkedIn blue */
+      color: #0077b5; 
     }
 
     .footer__copy {
